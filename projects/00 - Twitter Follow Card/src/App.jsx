@@ -1,4 +1,3 @@
-import React from 'react'
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard'
 
@@ -61,6 +60,8 @@ export function App(){
             */}
 
             {
+                // Se puede hacer un map de un array de objetos, el .map() recibe una funcion que recibe un objeto
+                // y retorna un componente de React con las propiedades del objeto y sus valores
                 users.map(({userName, name, isFollowing}) => {
                     return (
                         <TwitterFollowCard 
